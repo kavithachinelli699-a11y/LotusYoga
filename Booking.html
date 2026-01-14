@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LotusYoga</title>
+     <link rel="shortcut icon" href="assets/brand4.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    
+     <header class="container-fluid">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a href="#" class="navbar-brand">
+          <span class="brand">
+            <img src="assets/brand4.png" class="yoga-logo" alt="Yoga Logo">
+          </span>
+          <strong>LotusYoga</strong></a>
+
+        <button data-bs-target="#mynav" data-bs-toggle="collapse" class="navbar-toggler">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mynav">
+          <ul class="navbar-nav ms-auto gap-3">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">About</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="workshop.html" class="nav-link">Workshops</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="pricing.html" class="nav-link">Pricing</a>
+            </li>
+
+             <li class="nav-item">
+              <a href="Booking.html" class="nav-link">Bookings</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ---------------------------------------section---------------------------------------- -->
+
+    <section class="container my-5">
+  <h2 class="text-center mb-4">Workshop Bookings/Enrollments</h2>
+
+  
+  <div class="booking py-4">
+    <form id="workshopForm" class="p-4 shadow rounded">
+
+    
+    <input type="text" id="name" class="form-control mb-3" placeholder="Full Name">
+
+    <input type="email" id="email" class="form-control mb-3" placeholder="Email Address">
+
+    <input type="tel" id="phone" class="form-control mb-3" placeholder="Mobile Number">
+
+    <select id="workshop" class="form-control mb-3">
+      <option value="">Select Workshop</option>
+      <option>Blissful Senses Awakening Yoga</option>
+      <option>Morning Flow Yoga</option>
+      <option>Stress Relief Meditation</option>
+    </select>
+
+    <input type="date" id="date" class="form-control mb-3">
+
+    <select id="mode" class="form-control mb-3">
+      <option value="">Mode of Participation</option>
+      <option>Offline</option>
+      <option>Online</option>
+    </select>
+
+  <textarea id="message" class="form-control mb-3" rows="3" placeholder="Any special requirements"></textarea>
+
+    <button type="submit" class="btn book">
+      Book Workshop
+    </button>
+
+  </form>
+  </div>
+</section>    
+
+
+<script>
+   document.getElementById("workshopForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  const name = document.getElementById("name").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const phone = document.getElementById("phone").value.trim();
+  const workshop = document.getElementById("workshop").value;
+  const date = document.getElementById("date").value;
+  const mode = document.getElementById("mode").value;
+  
+
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  const phonePattern = /^[6-9]\d{9}$/; 
+
+  if (name === "") {
+    alert("Please enter your full name");
+    return;
+  }
+
+  if (!emailPattern.test(email)) {
+    alert("Please enter a valid email address");
+    return;
+  }
+
+  if (!phonePattern.test(phone)) {
+    alert("Please enter a valid 10-digit mobile number");
+    return;
+  }
+
+  if (workshop === "") {
+    alert("Please select a workshop");
+    return;
+  }
+
+  if (date === "") {
+    alert("Please select a workshop date");
+    return;
+  }
+
+  if (mode === "") {
+    alert("Please select mode of participation");
+    return;
+  }
+
+
+  alert("🎉 Workshop booked successfully!");
+  this.reset();
+});
+
+</script>
+
+</body>
+</html>

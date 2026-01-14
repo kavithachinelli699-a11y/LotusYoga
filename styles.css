@@ -1,0 +1,297 @@
+.hero-section {
+  height: 90vh;
+     background: linear-gradient(
+      rgba(143, 174, 146, 0.18),
+      rgba(143, 174, 146, 0.18)
+    ), url("assets/banner1.jpg"); 
+
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-section h1, .hero p {
+  color: #2E2E2E;
+}
+
+.hero-section .btn {
+  background: #8FAE92;
+  color: #FFFFFF;
+  
+}
+
+.hero-section .btn:hover {
+  background: #7a9e82; 
+}
+
+
+
+
+section a {
+   text-decoration: none !important;
+   border-radius: 10px;
+
+}
+
+.img-tall {
+  height: 550px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  
+}
+
+.vertical-carousel {
+  width: 100%;           
+  height: 350px;         
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.vertical-carousel img {
+  width: 100%;
+  display: block;
+}
+
+.carousel-track {
+  display: flex;
+  flex-direction: column;
+  animation: slideDown 10s linear infinite;
+}
+
+@keyframes slideDown {
+   0%   { transform: translateY(-100%); }
+  100% { transform: translateY(0); }
+}
+
+/* ------------------------------------------------------- */
+
+.read {
+  text-align: start;
+
+}
+
+.read a {
+  width: 200px;
+  height: 50px;
+  padding: 10px;
+  font-size: large;
+  font-weight: 10px;
+}
+
+
+.box h6 {
+  font-size: xx-large;
+  font-weight: 700;
+
+}
+
+.box p {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+
+.row i {
+  font-size: 40px;
+  color: rgb(14, 2, 2);
+}
+
+.fw-bold a {
+  text-decoration: none;
+  color: black;
+}
+
+
+.image {
+  height: 400px;
+  object-fit: cover;
+}
+
+.banner {
+  height: 450px;
+  object-fit: cover;
+}
+
+
+
+.bannerimg {
+  background-image: url(assets/banner2.jpg);
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero {
+  width: 60%;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.hero1{
+  position: absolute;
+  top: 90%;
+  width: 80%;
+  left: 10%;
+
+}
+
+.hero2{
+ width: 90%;
+ margin: auto;
+ margin-top: 15rem!important
+}
+
+
+
+.member {
+  margin: 40px 30% 40px 30%;
+  text-align: center;
+  border: 1px solid green;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.member p {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+
+.faq {
+  text-align: center;
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 50px;
+
+}
+
+.faq p {
+  margin-top: 25px;
+  
+}
+
+.detail {
+  text-align: start;
+  background-color: #8FAE92;
+  padding: 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.questions {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.sec1 {
+  position: relative;
+}
+
+.check{
+  margin-top: 5%;
+}
+
+.check h2{
+  font-weight: 600;
+}
+
+.sound img{
+    height: 600px;
+    object-fit: cover;
+}
+
+
+.soman img{
+  height: 600px;
+    object-fit: cover;
+}
+
+
+.medi img{
+  height: 600px;
+    object-fit: cover;
+}
+
+
+.workshop{
+  height: 90vh;
+  background: linear-gradient(rgba(0, 0, 0, .45), rgba(0, 0, 0, .45)),
+   url("assets/member.jpg");
+   background-size: cover;
+  background-position: center;
+}
+ 
+.brand img {
+width: 30%;
+height: 70px;
+}
+ 
+
+
+/* ---------------------------HEADER / NAVBAR------------------------------------------ */
+
+.navbar {
+  background: #ffffff;
+  border-bottom: 1px solid rgba(0,0,0,.05);
+}
+
+
+.navbar a {
+  color: #2E2E2E;
+  font-weight: 500;
+}
+
+
+.navbar a:hover,
+.navbar .active {
+  color: #8FAE92;
+}
+
+.booking{
+  width: 70%;
+  margin: auto;
+}
+.book{
+  background-color: #8FAE92;
+ 
+}
+
+.disco button{
+  padding: 7px 15px 7px 15px;
+  border: none;
+  
+}
+
+.timetable-section {
+  background: #f7fbf9;
+}
+
+.timetable-table thead {
+  background: #2e8b57;
+  color: #fff;
+}
+
+.timetable-table tbody tr {
+  transition: all 0.3s ease;
+}
+
+/* .timetable-table tbody tr:hover {
+  background: #e8f5ef;
+  transform: scale(1.01);
+} */
+
+.filter-btn.active,
+.filter-btn:hover {
+  background-color: #2e8b57;
+  color: #fff;
+}
+
+.enroll{
+ margin-left: 45%;
+ margin-top: 10px;
+}

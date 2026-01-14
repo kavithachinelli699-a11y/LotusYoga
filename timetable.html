@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LotusYoga</title> 
+  <link rel="shortcut icon" href="assets/brand4.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+      <header class="container-fluid">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a href="#" class="navbar-brand">
+          <span class="brand">
+            <img src="assets/brand4.png" class="yoga-logo" alt="Yoga Logo">
+          </span>
+          <strong>LotusYoga</strong></a>
+
+        <button data-bs-target="#mynav" data-bs-toggle="collapse" class="navbar-toggler">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mynav">
+          <ul class="navbar-nav ms-auto gap-3">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">About</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="workshop.html" class="nav-link">Workshops</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="pricing.html" class="nav-link">Pricing</a>
+            </li>
+
+             <li class="nav-item">
+              <a href="Booking.html" class="nav-link">Bookings</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+<!-- --------------------------------SECTION----------------------------------- -->
+<section class="timetable-section py-5">
+  <div class="container">
+    <h2 class="text-center mb-2">🧘 LotusYoga Class Timetable</h2>
+    <p class="text-center text-muted mb-4">Choose the perfect session for your practice</p>
+
+    <!-- Filter Buttons -->
+    <div class="text-center mb-4">
+      <button class="btn btn-outline-success filter-btn active" data-filter="all">All</button>
+      <button class="btn btn-outline-success filter-btn" data-filter="morning">Morning</button>
+      <button class="btn btn-outline-success filter-btn" data-filter="afternoon">Afternoon</button>
+      <button class="btn btn-outline-success filter-btn" data-filter="evening">Evening</button>
+      <button class="btn btn-outline-success filter-btn" data-filter="weekend">Weekend</button>
+    </div>
+
+    <!-- Timetable Table -->
+    <div class="table-responsive">
+      <table class="table table-bordered text-center align-middle timetable-table">
+        <thead>
+          <tr>
+            <th>Time</th>
+            <th>Class</th>
+            <th>Level</th>
+            <th>Session</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="timetable-row morning">
+            <td>6:00 – 7:00 AM</td>
+            <td>Hatha Yoga</td>
+            <td>Beginner</td>
+            <td>Morning</td>
+          </tr>
+          <tr class="timetable-row morning">
+            <td>7:15 – 8:15 AM</td>
+            <td>Vinyasa Flow</td>
+            <td>Intermediate</td>
+            <td>Morning</td>
+          </tr>
+          <tr class="timetable-row afternoon">
+            <td>12:00 – 1:00 PM</td>
+            <td>Gentle Stretch Yoga</td>
+            <td>Beginner</td>
+            <td>Afternoon</td>
+          </tr>
+          <tr class="timetable-row evening">
+            <td>5:30 – 6:30 PM</td>
+            <td>Power Yoga</td>
+            <td>Advanced</td>
+            <td>Evening</td>
+          </tr>
+          <tr class="timetable-row evening">
+            <td>6:45 – 7:45 PM</td>
+            <td>Yin Yoga & Relaxation</td>
+            <td>All Levels</td>
+            <td>Evening</td>
+          </tr>
+          <tr class="timetable-row weekend">
+            <td>Saturday 7:00 – 8:30 AM</td>
+            <td>Detox Yoga Workshop</td>
+            <td>All Levels</td>
+            <td>Weekend</td>
+          </tr>
+          <tr class="timetable-row weekend">
+            <td>Sunday 6:00 – 7:00 PM</td>
+            <td>Blissful Senses Meditation</td>
+            <td>All Levels</td>
+            <td>Weekend</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <a href="Booking.html" class="btn text-white enroll" style="background-color: #8FAE92;">Enrollment</a>
+
+  </div>
+</section>
+
+<!-- --------------------------FOOTER---------------------------------- -->
+
+<hr>
+ <footer class="py-5">
+   <div class="container-fluid text-center">
+    <div class="row">
+      <div class="col-md-3">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a> &nbsp;
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+
+      <div class="col-md-6">
+
+        <h3>© 2025 LotusYoga</h3>
+        <p class="fw-bold">Designed and Developed by Kavitha.ch</p>
+      </div>
+
+      <div class="col-md-3">
+        <span class="fw-bold">
+          <a href="#">
+            <p>FAQ</p>
+          </a>
+          <a href="#">
+            <p>Privacy Policy</p>
+          </a>
+          <a href="#">
+            <p>Cancellation Policy</p>
+          </a>
+          <a href="#">
+            <p>Terms & Conditions</p>
+          </a>
+        </span>
+      </div>
+    </div>
+  </div>
+ </footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
